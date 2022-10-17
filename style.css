@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Saira&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Saira', sans-serif;
+  width: 100vw;
+}
+
+.mainContainer {
+  background-color: #ffd6ff;
+
+}
+
+.mainContainer .show-nav {
+  transform: rotate(-20deg);
+  transform-origin: top left;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pages {
+  margin: 150px auto;
+  width: 90vw;
+  height: 55vh;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding: 100px;
+  position: relative;
+  width: 80vw;
+  margin: 20px auto;
+}
+
+.name {
+  margin: 50px;
+  text-align: center;
+}
+
+.name h1 {
+  font-size: 3.3rem;
+}
+
+.name h4 {
+  font-size: 1.5rem;
+}
+
+.profile {
+  text-align: center;
+}
+
+.title {
+  padding-left: 70px;
+}
+
+.description {
+  background-color: #ffd6ff;
+  font-size: large;
+  opacity: .6;
+  border-radius: 10px;
+  max-width: 70vw;
+  margin: 20px auto;
+  padding: 40px;
+}
+
+.display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  padding: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  grid-gap: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.card {
+  display: grid;
+  border: solid .5px #ffd6ff;
+  border-radius: 10px;
+  margin: 2px;
+  font-size: large;
+}
+
+.card img {
+  padding: 7px;
+  margin: 14px;
+}
+
+.container {
+  display: flex;
+  width: 70vw;
+  margin: 20px auto;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffd6ff;
+  opacity: .6;
+  height: 20vh;
+  border-radius: 20px;
+  cursor: pointer;
+  flex: 2;
+  margin: 10px;
+  max-width: 80vw;
+  transition: 0.7s ease-in;
+  position: relative;
+}
+
+#webPage {
+  font-size: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+}
+
+#repoLink {
+  font-size: 10px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+}
+
+.panel.active{
+  flex: 6;
+}
+
+.panel.active #webPage, .panel.active #repoLink{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.5s;
+}
+
+.contactBox {
+  margin: 30px auto;
+  font-size: large;
+  text-align: center;
+}
+.socials {
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 7px;
+  background-color:#ffd6ff;
+  width: 100vw;
+}

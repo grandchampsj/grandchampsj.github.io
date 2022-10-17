@@ -9,14 +9,14 @@ body {
   width: 100vw;
 }
 
-.mainContainer {
+/*.mainContainer {
   background-color: #ffd6ff;
 
 }
 
 .mainContainer .show-nav {
   transform: rotate(-20deg);
-  transform-origin: top left;
+  transform-origin: top left;*/
 }
 
 a {

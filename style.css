@@ -5,7 +5,6 @@ body {
   overflow-x: hidden;
   margin: 0;
   background-color: #fff;
-  /*color:lightpink;*/
 }
 
 .circle-container {
@@ -84,7 +83,7 @@ nav ul li {
   transition: transform .5s linear;
   width: 100vw;
   min-height: 100vh;
-  padding: 50px;
+  padding: 0;
 }
 
 .mainContainer.show-nav {
@@ -99,6 +98,9 @@ a {
 
 nav li a {
   color: #f2b7c6;
+  font-weight: bolder;
+  text-decoration: none;
+  
 } 
 
 nav ul li i{
@@ -135,8 +137,8 @@ p {
 
 .pages {
   margin: 50px auto;
-  width: 90vw;
-  max-height: 70vh;
+  width: 100vw;
+  max-height: 100vh;
   align-items: left;
   display: flex;
   flex-direction: column;
@@ -144,14 +146,10 @@ p {
 }
 
 .intro {
-  display: flex;
+  display: grid;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  padding: 100px;
-  position: relative;
-  width: 80vw;
-  margin: 20px auto;
 }
 
 .name, .header {
@@ -160,11 +158,11 @@ p {
 }
 
 .name h1 {
-  font-size: 5rem;
+  font-size: 48px;
 }
 
 .name h4 {
-  font-size: 2rem;
+  font-size: 24px;
 }
 
 .photo {
@@ -299,5 +297,4 @@ footer {
   padding: 7px;
   background-color:#fff;
   color: #f2b7c6;
-  width: 100vw;
 }

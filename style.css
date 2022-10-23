@@ -135,6 +135,10 @@ p {
   background-color: #fff;
 }
 
+.resume {
+  cursor: pointer;
+}
+
 .pages {
   margin: 50px auto;
   width: 100vw;
